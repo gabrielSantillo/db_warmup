@@ -31,6 +31,16 @@ CREATE TABLE `store_employee` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `store_employee`
+--
+
+LOCK TABLES `store_employee` WRITE;
+/*!40000 ALTER TABLE `store_employee` DISABLE KEYS */;
+INSERT INTO `store_employee` VALUES ('Natalia',50,'11 Street SW','4'),('Damaris',60,'1 Street SW','8887775553'),('Jose',70,'11 Street SW','8887775554');
+/*!40000 ALTER TABLE `store_employee` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `store_item`
 --
 
@@ -44,6 +54,16 @@ CREATE TABLE `store_item` (
   `current_stock` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `store_item`
+--
+
+LOCK TABLES `store_item` WRITE;
+/*!40000 ALTER TABLE `store_item` DISABLE KEYS */;
+INSERT INTO `store_item` VALUES ('Niguiri',10,'The best sushi',50),('Burger',15,'The best burger',100),('Pudim',8,'The best Pizza',50);
+/*!40000 ALTER TABLE `store_item` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `store_loyalty_member`
@@ -62,6 +82,16 @@ CREATE TABLE `store_loyalty_member` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `store_loyalty_member`
+--
+
+LOCK TABLES `store_loyalty_member` WRITE;
+/*!40000 ALTER TABLE `store_loyalty_member` DISABLE KEYS */;
+INSERT INTO `store_loyalty_member` VALUES ('Alex','123 strees NW','8885551234','alex@alex.com',545),('Zach','23 strees NW','8885551236','hani@hani.com',654),('Collenn','13 strees NW','8','colleen@colleen.com',545);
+/*!40000 ALTER TABLE `store_loyalty_member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping routines for database 'store_warmup'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -74,4 +104,4 @@ CREATE TABLE `store_loyalty_member` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-10  9:18:12
+-- Dump completed on 2022-09-10  9:22:12
