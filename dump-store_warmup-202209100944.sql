@@ -51,7 +51,7 @@ CREATE TABLE `store_item` (
   `name` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
   `price` float DEFAULT NULL,
   `description` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
-  `current_stock` int(11) DEFAULT NULL
+  `current_stock` int(10) unsigned DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -104,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-10  9:22:12
+-- Dump completed on 2022-09-10  9:44:49
